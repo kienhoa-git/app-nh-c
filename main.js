@@ -156,7 +156,7 @@ const app = {
     };
     pre_button.onclick = () => {
       if (this.IsRandom) this.randomsong();
-      else if (this.IsRepeat);
+      else if (this.IsRepeat) this.loadCurrentSong();
       else this.presong();
       audio.play();
     };
